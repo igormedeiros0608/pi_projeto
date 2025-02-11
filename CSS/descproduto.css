@@ -237,7 +237,7 @@ header .logo img {
     margin: 15px 0;
 }
 
-.actions {
+.acoes-desc-produto {
     display: flex;
     gap: 10px;
     margin-top: 15px;
@@ -320,7 +320,7 @@ header .logo img {
 
 
 
-.container {
+.container-avaliacao-produto {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
@@ -439,8 +439,8 @@ h2 {
     padding: 20px;
 }
 
-.card {
-    background-color: white;
+.card-relacionados {
+    background-color: rgba(255, 255, 255, 0.718);
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 5px;
@@ -448,6 +448,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     position:sticky;
+    
     
 }
 
