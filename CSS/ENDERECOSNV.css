@@ -245,6 +245,17 @@ button#openSidebarBtn:hover {
 }
 
 
+form#new-endereco-form{
+    margin-right: 20px;
+    margin-left: 20px;
+    color:red;
+}
+
+label{
+    margin-left: 20px;
+}
+
+
 
 
 
@@ -321,10 +332,11 @@ body {
     
 }
 
-h1 {
-    font-size: 20px;
+h2 {
+    font-size: 25px;
     color: #333;
     text-align: center;
+    margin-right: 20px;
 }
 
 .step-indicator {
@@ -358,7 +370,10 @@ h1 {
     background: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 8px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
+
 
 .endereco-card input[type="radio"] {
     margin-right: 10px;

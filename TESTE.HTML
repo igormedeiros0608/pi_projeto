@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Produto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 200vh;
+        }
+        .container {
+        width: 1400px; /* Aumentei de 1200px para 1400px */
+        margin: 2rem auto;
+        background-color: #fff;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+
+        header h1 {
+            font-size: 24px;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        header nav a {
+            font-size: 16px;
+            font-weight: 500;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        label {
+            font-weight: 500;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="file"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: none;
+            height: 80px;
+        }
+
+        button.save-button {
+            padding: 12px 24px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #ff5722;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            align-self: flex-end;
+            font-weight: 600;
+        }
+
+        button.save-button:hover {
+            background-color: #e64a19;
+        }
+
+        .product-status {
+            display: flex;
+            gap: 16px;
+        }
+
+        .product-status div {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Novo Produto</h1>
+            <nav>
+                <a href="#">Cadastrados</a>
+            </nav>
+        </header>
+
+        <form>
+            <section class="product-details">
+                <h2>Detalhes do Produto</h2>
+                <div class="form-row">
+                    <div>
+                        <label>Nome do Produto</label>
+                        <input type="text" placeholder="Digite o nome">
+                    </div>
+                    <div>
+                        <label>Marca/Modelo</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Quantidade</label>
+                        <input type="number">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div>
+                        <label>Departamento</label>
+                        <select>
+                            <option>Selecione</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Imagem</label>
+                        <input type="file">
+                    </div>
+                    <div>
+                        <label>Nota Fiscal</label>
+                        <input type="file">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div>
+                        <label>Número de Série</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Custo</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Estoque Mínimo</label>
+                        <input type="number">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div>
+                        <label>Descrição</label>
+                        <textarea maxlength="1000"></textarea>
+                    </div>
+                </div>
+            </section>
+
+            <section class="promotional-specifications">
+                <h2>Especificações Promocionais</h2>
+                <div class="form-row">
+                    <div>
+                        <label>Valor</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Desconto Promocional</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Produtos Relacionados</label>
+                        <select>
+                            <option>Selecione</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <section class="product-status">
+                <div>
+                    <input type="checkbox" id="in-stock">
+                    <label for="in-stock">Em estoque Hoje</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="warranty">
+                    <label for="warranty">Garantia 1 ano</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="free-shipping">
+                    <label for="free-shipping">Entrega Grátis 1-2 dias</label>
+                </div>
+            </section>
+
+            <button type="submit" class="save-button">Salvar</button>
+        </form>
+    </div>
+</body>
+</html>

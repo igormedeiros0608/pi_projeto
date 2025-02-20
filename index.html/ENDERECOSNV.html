@@ -71,39 +71,15 @@
         </button>
     
         <script src="script.js"></script>
+    </main>
 
 
     
     
-    <div class="principalendereco">
+    <div class="principalendereco" >
         <h2>Meus Endereços</h2>
-        <!--<div class="endereco-card">
-            <div class="endereco-header">
-                <input type="radio" id="home" name="default-endereco" checked>
-                <label for="home">Casa</label>
-               
-                <button class="fa-solid fa-pen-to-square"></button>
-                <button class="fa-solid fa-x"></button>
-            </div>
-            <p>Rua Capiatá, 240, Novos Estados, Campo Grande MS 79034331</p>
-            <p>(67) 98555-0104</p>
-        </div>
-
-        <div class="endereco-card">
-            <div class="endereco-header">
-                <input type="radio" id="work" name="default-endereco">
-                <label for="work">Trabalho <span class="default-tag">PADRÃO</span></label>
-                
-                <button class="fa-solid fa-pen-to-square"></button>
-                <button class="fa-solid fa-x"></button>
-                
-            </div>
-            <p>Rua Dr Jose, 2715, Caranda Bosque, Campo Grande MS 79034331</p>
-            <p>(67) 98555-0127</p>
-        </div>
-        
-        <button class="add-endereco-btn">Adicionar novo endereço</button>
-    </div>-->
+    </div>
+   
 
 
 
@@ -141,11 +117,36 @@
         </div>
     </div>
 
-    <div class="novo-endereco">
-        <i class="fa fa-plus"></i> Adicionar novo endereço
+    <div id="new-endereco-form" style="display: none;">
+        <h2>Adicionar Novo Endereço</h2>
+        <form id="form-novo-endereco">
+            <label for="nome-endereco">Nome (ex: Casa, Trabalho):</label>
+            <input type="text" id="nome-endereco" required>
+    
+            <label for="endereco-detalhes">Endereço Completo:</label>
+            <input type="text" id="endereco-detalhes" required>
+    
+            <label for="telefone-endereco">Telefone:</label>
+            <input type="text" id="telefone-endereco" required>
+    
+            <button type="submit" class="comprar-btn">Salvar Endereço</button>
+
+
+        </form>
+    </div>
+    
+    <div class="enderecos" id="enderecos-list">
+        <!-- Endereços existentes estarão aqui -->
     </div>
 
-    <a href="#" class="comprar-btn">Sair</a>
+    <div class="novo-endereco" id="add-new-endereco-btn">
+        <i class="fa fa-plus"></i> Adicionar novo endereço
+    </div>
+    
+
+   
+
+    <a href="../index.html/homepage.html" class="comprar-btn">Sair</a>
     <a href="#" class="comprar-btn">Avançar</a>
     
 </div>
@@ -212,3 +213,7 @@
 </html>
 </body>
 </html>
+
+<script src="ENDERECO.js"></script>
+
+

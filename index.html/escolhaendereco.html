@@ -82,9 +82,34 @@
         </div>
     </div>
 
-    <div class="add-new-endereco">
+  
+    
+    <div id="new-endereco-form" style="display: none;">
+        <h2>Adicionar Novo Endereço</h2>
+        <form id="form-novo-endereco">
+            <label for="nome-endereco">Nome (ex: Casa, Trabalho):</label>
+            <input type="text" id="nome-endereco" required>
+    
+            <label for="endereco-detalhes">Endereço Completo:</label>
+            <input type="text" id="endereco-detalhes" required>
+    
+            <label for="telefone-endereco">Telefone:</label>
+            <input type="text" id="telefone-endereco" required>
+    
+            <button type="submit" class="btoes-endereco">Salvar Endereço</button>
+
+
+        </form>
+    </div>
+    
+    <div class="enderecos" id="enderecos-list">
+        <!-- Endereços existentes estarão aqui -->
+    </div>
+
+    <div class="add-new-endereco" id="add-new-endereco-btn">
         <i class="fa fa-plus"></i> Adicionar novo endereço
     </div>
+    
 
     <a href="../index.html/descproduto.html" class="btoes-endereco">Sair</a>
     <a href="../index.html/ENVIO.html" class="btoes-endereco">Avançar</a>
@@ -151,4 +176,24 @@
     </div>
 </footer>
 </body>
+
 </html>
+
+
+<script src="ENDERECO.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
